@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="LeftNaviBar">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+    <col class="header_container">
+        <col class="element_container">
+            <image class="avater" id="avater"/>
+            <label class="area" id="area">华南区/广东省</label>
+            <label class="shop_name" id="shop_name">广州市/正佳广场店</label>
+        </col>
+    </col>
+    
+    <image class="tag_line"/>
+    
+    <list id="list" class="list"/>
+    <row class="bottom_contianer">
+        <image class="logo"/>
+    </row>
+    
+    
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header_container{
+    width: 100%;
+    height: 30%;
+    }
+    
+    .list{
+    width: 100%;
+    height: 50%;
+    }
+    
+    .bottom_contianer{
+    width: 100%;
+    height: 20%;
+    }
+    
+    .element_container{
+    width: 100px;
+    height: 150px;
+    float: center;
+    v-float: center;
+    }
+    
+    .avater{
+    float: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color:white;
+    }
+    
+    .area{
+    float:center;
+    width: auto;
+    height: auto;
+    color:#a4a4a4;
+    margin-top:10px;
+    }
+    
+    .shop_name{
+    float:center;
+    width: auto;
+    height: auto;
+    color:#a4a4a4;
+    }
+    
+    .tag_line{
+    width:1px;
+    height: 35px;
+    position:absolute;
+    v-float: center;
+    right: 10px;
+    background-color:#a4a4a4;
+    }
+    
+    .logo{
+    width: 100%;
+    height: 150px;
+    mode:fit;
+    background-color:gray;
+    }
+  </style>
+</ui>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="MainBoard_iPhone">
+
+  <col class="wrapper">
+    <row class="top_container">
+        <col class="element_container">
+            <label class="title" id="title_1">潮流资讯</label>
+            <image class="sep_line"/>
+            <image class="element_image" id="image_1"/>
+        </col>
+        <col class="element_container">
+            <label class="title" id="title_2">培训资料</label>
+            <image class="sep_line"/>
+            <image class="element_image" id="image_2"/>
+        </col>
+        <col class="element_container">
+            <label class="title" id="title_3">陈列基础手册</label>
+            <image class="sep_line"/>
+            <image class="element_image" id="image_3"/>
+        </col>
+    </row>
+    
+    <row class="bottom_container">
+        <col class="bottom_left_container">
+            <row class="title_continer">
+                <label class="tiny_title">消息处理</label>
+                <image class="message_icon"/>
+            </row>
+            <col class="message_container">
+                <image class="bg"/>
+            </col>
+        </col>
+        
+        <col class="bottom_right_container">
+            <row class="right_title_continer">
+                <label class="tiny_title">数据分析</label>
+                <image class="diagnosis_icon"/>
+            </row>
+            <col class="diagnosis_container">
+                <image class="bg"/>
+            </col>
+        </col>
+    </row>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        padding-left:10%;
+        padding-right:10%;
+    }
+    
+    .top_container{
+    width: 100%;
+    height: 50%;
+    }
+    
+    .bottom_container{
+    padding-top:50px;
+    padding-bottom:100px;
+    width: 100%;
+    height: 50%;
+    }
+    
+    .element_container{
+    width: 33.3%;
+    height: 80%;
+    v-float:bottom;
+    }
+    
+    .bottom_left_container{
+    height: 100%;
+    width: 50%;
+    }
+    
+    .bottom_right_container{
+    height: 100%;
+    width: 50%;
+    }
+    
+    .message_container{
+    float:left;
+    width: 90%;
+    height: 100%;
+    }
+    
+    .diagnosis_container{
+    float:right;
+    width: 90%;
+    height: 100%;
+    }
+    
+    .title_continer{
+    width: 100%;
+    height: 25px;
+    }
+    
+    .right_title_continer{
+    width: 100%;
+    height: 25px;
+    margin-left:10%;
+    }
+    
+    .tiny_title{
+    width: auto;
+    height: auto;
+    color:white;
+    }
+    
+    .title{
+    color:white;
+    font-size:23px;
+    width: auto;
+    height: auto;
+    float: center;
+    }
+    
+    .sep_line{
+    float: center;
+    margin-top:35px;
+    width: 30px;
+    height:1px;
+    background-color:white;
+    }
+    
+    .element_image{
+    width: 200px;
+    height: 200px;
+    margin-top: 35px;
+    border-radius: 100px;
+    background-color:white;
+    float:center;
+    }
+    
+    .bg{
+    width: 100%;
+    height: 100%;
+    background-color:#191A1B;
+    }
+    
+    .message_icon{
+    width: 20px;
+    height: 20px;
+    background-color:white;
+    margin-left: 2px;
+    }
+    
+    .diagnosis_icon{
+    width: 20px;
+    height: 20px;
+    background-color:white;
+    margin-left: 2px;
+    }
+  </style>
+</ui>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="LoginBoard_iPhone">
+  <!--
+    <row></row>
+  -->
+  <row class="wrapper">
+    <col class="left_container">
+        <col class="login_container">
+            <row class="container">
+                <input id="userName" class="userName" placeholder="用户名/name"/>
+                <image class="line"/>
+            </row>
+            <row class="container">
+                <input id="password" class="password" placeholder="密码/password"/>
+                <image class="line"/>
+            </row>
+            <button class="login_btn public_btn" id="login_btn">登录</button>
+            <button class="register_btn public_btn" id="register_btn">注册</button>
+        </col>
+    </col>
+    <col class="right_container">
+        <image class="cover" id="cover"/>
+    </col>
+  </row>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .left_container{
+    hieght:100%;
+    width:40%;
+    }
+    
+    .right_container{
+    height: 100%;
+    width: 60%;
+    }
+    
+    .login_container{
+    float: center;
+    v-float: center;
+    width:200px;
+    height:300px;
+    }
+    
+    .container{
+    width: 100%;
+    height: 45px;
+    }
+    
+    .userName{
+    width: 80%;
+    height:30px;
+    margin-left: 10px;
+    v-float: bottom;
+    font-size:15px;
+    text-align:center;
+    }
+    
+    .password{
+    width: 80%;
+    height:30px;
+    margin-left: 10px;
+    v-float: bottom;
+    font-size:15px;
+    input-secure: yes;
+    text-align:center;
+    }
+    
+    .line{
+    witdh: 100%;
+    height:1px;
+    background-color:#0F6B19;
+    position:absolute;
+    bottom:0px;
+    }
+    
+    .cover{
+    background-color:black;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .public_btn{
+    border-radius:5px;
+    width: 80px;
+    height: 35px;
+    float: center;
+    background-color:black;
+    }
+    
+    .login_btn{
+    margin-top:25px;
+    }
+    
+    .register_btn{
+    margin-top:15px;
+    }
+  </style>
+</ui>

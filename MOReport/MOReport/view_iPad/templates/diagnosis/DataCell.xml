@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="DataCell">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+    <!-- add your UI elements here -->
+    <col class="container">
+        <image class="data_cover"/>
+        <label class="title" id="title"/>
+    </col>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .container{
+    v-float:center;
+    float:left;
+    width:80px;
+    height: 100px;
+    }
+    
+    .data_cover{
+    background-color:white;
+    width: 80px;
+    height:75px;
+    float:center;
+    }
+    
+    .title{
+    float:center;
+    width:auto;
+    height:auto;
+    margin-top:5px;
+    color:#a4a4a4;
+    }
+  </style>
+</ui>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="CalendarWidgt">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+    <col class="header_container">
+        <button id="choose_calendar" class="mask"/>
+        <image class="calendar_icon"/>
+    </col>
+    <col class="mid_container">
+        <col class="up_button_container">
+            <button id="up_arrow" class="mask"/>
+            <image class="up_arrow"/>
+        </col>
+        <list class="list" id="list"/>
+        <col class="down_button_container">
+            <button id="down_arrow" class="mask"/>
+            <image class="down_arrow"/>
+        </col>
+    </col>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header_container{
+    width: 100%;
+    height: 20%;
+    }
+    
+    .mask{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    }
+    
+    .calendar_icon{
+    width: 40px;
+    height: 45px;
+    background-color:white;
+    mode:fit;
+    v-float:center;
+    float:center;
+    }
+    
+    .mid_container{
+    width: 100%;
+    height: 80%;
+    }
+    
+    .up_button_container{
+    width: 100%;
+    height:10%;
+    }
+    
+    .down_button_container{
+    width: 100%;
+    height:10%;
+    }
+    
+    .up_arrow{
+    width: 10px;
+    height: 10px;
+    v-float:center;
+    float:center;
+    mode:fit;
+    background-color:white;
+    }
+    
+    .down_arrow{
+    width: 10px;
+    height: 10px;
+    v-float:center;
+    float:center;
+    mode:fit;
+    background-color:white;
+    }
+    
+    .list{
+    width: 100%;
+    height:80%;
+    }
+  </style>
+</ui>

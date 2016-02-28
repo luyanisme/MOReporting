@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="DisplayPhotoBoardCell_iPhone">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+    <!-- add your UI elements here -->
+    <col class="container">
+        <image class="bg"/>
+        <row class="sub_container">
+            <image class="photo_icon"/>
+            <image class="camera"/>
+        </row>
+    </col>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .container{
+    width: 80%;
+    height: 80%;
+    float:center;
+    v-float:center;
+    }
+    
+    .sub_container{
+    width: 40%;
+    height: 30px;
+    float:center;
+    v-float:center;
+    }
+    
+    .bg{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    border-width: 7px;
+    border-color:white;
+    }
+    
+    .photo_icon{
+    float: left;
+    v-float:center;
+    width:30px;
+    height: 30px;
+    mode:fit;
+    background-color:white;
+    }
+    
+    .camera{
+    position:absolute;
+    float: right;
+    v-float:center;
+    width:30px;
+    height: 30px;
+    mode:fit;
+    background-color:white;
+    }
+  </style>
+</ui>
