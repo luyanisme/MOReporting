@@ -8,22 +8,16 @@
 //	Powered by BeeFramework
 //
 //
-//  LeftNaviBar.h
+//  AddressCell_iPhone.h
 //  MOReport
 //
-//  Created by 卢棪 on 2/27/16.
+//  Created by 卢棪 on 2/29/16.
 //  Copyright © 2016 sencloud. All rights reserved.
 //
 
 #import "Bee.h"
 
 #pragma mark -
-AS_UI(LeftNaviBar, leftBar)
-@interface LeftNaviBar : BeeUICell
 
-AS_SINGLETON(LeftNaviBar)
-AS_OUTLET(BeeUIScrollView, list)
-
-@property(nonatomic, strong) NSArray *titleLists;
-
+@interface AddressCell_iPhone : BeeUICell
 @end

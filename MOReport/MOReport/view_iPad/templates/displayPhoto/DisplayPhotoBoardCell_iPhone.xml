@@ -7,11 +7,12 @@
   <col class="wrapper">
     <!-- add your UI elements here -->
     <col class="container">
-        <image class="bg"/>
+        <image class="bg" id="cover"/>
         <row class="sub_container">
             <image class="photo_icon"/>
             <image class="camera"/>
         </row>
+        <label class="tips" id="tips">这里添加照片说明这里添加照片说明这里添加照片说明</label>
     </col>
   </col>
    
@@ -61,6 +62,17 @@
     height: 30px;
     mode:fit;
     background-color:white;
+    }
+    
+    .tips{
+    position:absolute;
+    width:40%;
+    height: 40px;
+    float: center;
+    margin-top:10px;
+    color:white;
+    line-num: 2;
+    bottom: 20px;
     }
   </style>
 </ui>

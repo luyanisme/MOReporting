@@ -405,6 +405,12 @@
 		39AAD1F71C831BF2005ABE76 /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AAD1F61C831BF2005ABE76 /* CKCalendarView.m */; };
 		39AAD1FB1C831F30005ABE76 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 39AAD1F91C831F30005ABE76 /* right_arrow.png */; };
 		39AAD1FC1C831F30005ABE76 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 39AAD1FA1C831F30005ABE76 /* left_arrow.png */; };
+		39B4E6E71C845DE10007828D /* NoticeCell_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B4E6E51C845DE10007828D /* NoticeCell_iPhone.m */; };
+		39B4E6E81C845DE10007828D /* NoticeCell_iPhone.xml in Resources */ = {isa = PBXBuildFile; fileRef = 39B4E6E61C845DE10007828D /* NoticeCell_iPhone.xml */; };
+		39B4E6ED1C8470DC0007828D /* ShopInfoBoard_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B4E6EB1C8470DC0007828D /* ShopInfoBoard_iPhone.m */; };
+		39B4E6EE1C8470DC0007828D /* ShopInfoBoard_iPhone.xml in Resources */ = {isa = PBXBuildFile; fileRef = 39B4E6EC1C8470DC0007828D /* ShopInfoBoard_iPhone.xml */; };
+		39B4E6F21C8479C00007828D /* AddressCell_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B4E6F01C8479C00007828D /* AddressCell_iPhone.m */; };
+		39B4E6F31C8479C00007828D /* AddressCell_iPhone.xml in Resources */ = {isa = PBXBuildFile; fileRef = 39B4E6F11C8479C00007828D /* AddressCell_iPhone.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1181,6 +1187,15 @@
 		39AAD1F61C831BF2005ABE76 /* CKCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCalendarView.m; sourceTree = "<group>"; };
 		39AAD1F91C831F30005ABE76 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
 		39AAD1FA1C831F30005ABE76 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		39B4E6E41C845DE10007828D /* NoticeCell_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeCell_iPhone.h; sourceTree = "<group>"; };
+		39B4E6E51C845DE10007828D /* NoticeCell_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeCell_iPhone.m; sourceTree = "<group>"; };
+		39B4E6E61C845DE10007828D /* NoticeCell_iPhone.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NoticeCell_iPhone.xml; sourceTree = "<group>"; };
+		39B4E6EA1C8470DC0007828D /* ShopInfoBoard_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopInfoBoard_iPhone.h; sourceTree = "<group>"; };
+		39B4E6EB1C8470DC0007828D /* ShopInfoBoard_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopInfoBoard_iPhone.m; sourceTree = "<group>"; };
+		39B4E6EC1C8470DC0007828D /* ShopInfoBoard_iPhone.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ShopInfoBoard_iPhone.xml; sourceTree = "<group>"; };
+		39B4E6EF1C8479C00007828D /* AddressCell_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressCell_iPhone.h; sourceTree = "<group>"; };
+		39B4E6F01C8479C00007828D /* AddressCell_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressCell_iPhone.m; sourceTree = "<group>"; };
+		39B4E6F11C8479C00007828D /* AddressCell_iPhone.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AddressCell_iPhone.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1347,6 +1362,7 @@
 				39AAD1C11C81AFD2005ABE76 /* diagnosis */,
 				39AAD1DF1C82BBFC005ABE76 /* displayForm */,
 				39AAD1D41C82B509005ABE76 /* displayPhoto */,
+				39B4E6E91C8470C70007828D /* shopInfo */,
 			);
 			name = templates;
 			path = view_iPad/templates;
@@ -2700,6 +2716,9 @@
 				39AAD1AB1C818CA7005ABE76 /* MainBoard_iPhone.h */,
 				39AAD1AC1C818CA7005ABE76 /* MainBoard_iPhone.m */,
 				39AAD1AD1C818CA7005ABE76 /* MainBoard_iPhone.xml */,
+				39B4E6E41C845DE10007828D /* NoticeCell_iPhone.h */,
+				39B4E6E51C845DE10007828D /* NoticeCell_iPhone.m */,
+				39B4E6E61C845DE10007828D /* NoticeCell_iPhone.xml */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -2792,6 +2811,19 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		39B4E6E91C8470C70007828D /* shopInfo */ = {
+			isa = PBXGroup;
+			children = (
+				39B4E6EA1C8470DC0007828D /* ShopInfoBoard_iPhone.h */,
+				39B4E6EB1C8470DC0007828D /* ShopInfoBoard_iPhone.m */,
+				39B4E6EC1C8470DC0007828D /* ShopInfoBoard_iPhone.xml */,
+				39B4E6EF1C8479C00007828D /* AddressCell_iPhone.h */,
+				39B4E6F01C8479C00007828D /* AddressCell_iPhone.m */,
+				39B4E6F11C8479C00007828D /* AddressCell_iPhone.xml */,
+			);
+			path = shopInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2852,9 +2884,12 @@
 				39AAD1FB1C831F30005ABE76 /* right_arrow.png in Resources */,
 				39AAD1BB1C81A1C3005ABE76 /* LeftNaviBar.xml in Resources */,
 				39AAD1FC1C831F30005ABE76 /* left_arrow.png in Resources */,
+				39B4E6EE1C8470DC0007828D /* ShopInfoBoard_iPhone.xml in Resources */,
 				39AAD1C61C81AFF7005ABE76 /* DataGridBoard_iPhone.xml in Resources */,
 				39AACB501C818421005ABE76 /* MOReport-Prefix.pch in Resources */,
 				39AAD1C01C81A1E7005ABE76 /* FounctionCell_iPhone.xml in Resources */,
+				39B4E6F31C8479C00007828D /* AddressCell_iPhone.xml in Resources */,
+				39B4E6E81C845DE10007828D /* NoticeCell_iPhone.xml in Resources */,
 				39AACB5B1C818421005ABE76 /* LaunchScreen.xib in Resources */,
 				39AAD1D91C82B522005ABE76 /* DisplayPhotoBoard_iPhone.xml in Resources */,
 				39AAD1E41C82BC26005ABE76 /* DisplayFormBoard_iPhone.xml in Resources */,
@@ -2935,6 +2970,7 @@
 				39AAD0121C818443005ABE76 /* Bee_UIAnimationZoom.m in Sources */,
 				39AAD1521C818443005ABE76 /* bee.services.liveload.md in Sources */,
 				39AAD07C1C818443005ABE76 /* BeeUIQuery+Events.m in Sources */,
+				39B4E6ED1C8470DC0007828D /* ShopInfoBoard_iPhone.m in Sources */,
 				39AACB561C818421005ABE76 /* AppBoard_iPad.m in Sources */,
 				39AAD0281C818443005ABE76 /* Bee_UIImageLoader.m in Sources */,
 				39AACFCF1C818443005ABE76 /* Bee_MessageQueue.mm in Sources */,
@@ -3043,6 +3079,7 @@
 				39AAD1511C818443005ABE76 /* bee.services.liveload.m in Sources */,
 				39AAD0FD1C818443005ABE76 /* ASIHTTPRequest.m in Sources */,
 				39AAD06D1C818443005ABE76 /* UIView+BeeUILayout.m in Sources */,
+				39B4E6F21C8479C00007828D /* AddressCell_iPhone.m in Sources */,
 				39AAD0531C818443005ABE76 /* Bee_UITipsView.m in Sources */,
 				39AAD07E1C818443005ABE76 /* BeeUIQuery+Miscellaneous.m in Sources */,
 				39AAD0C81C818443005ABE76 /* NSDate+BeeExtension.mm in Sources */,
@@ -3223,6 +3260,7 @@
 				39AAD0301C818443005ABE76 /* Bee_UIPageViewController.m in Sources */,
 				39AAD0A81C818443005ABE76 /* Bee_FileCache.mm in Sources */,
 				39AAD0CE1C818443005ABE76 /* NSObject+BeeNotification.mm in Sources */,
+				39B4E6E71C845DE10007828D /* NoticeCell_iPhone.m in Sources */,
 				39AAD1E91C82BCD8005ABE76 /* CalendarWidgt.m in Sources */,
 				39AACB531C818421005ABE76 /* AppBoard_iPhone.m in Sources */,
 				39AAD0351C818443005ABE76 /* Bee_UISegmentedControl.m in Sources */,

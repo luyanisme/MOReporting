@@ -8,16 +8,19 @@
             <label class="title" id="title_1">潮流资讯</label>
             <image class="sep_line"/>
             <image class="element_image" id="image_1"/>
+            <button class="mask" id="fashion_news"/>
         </col>
         <col class="element_container">
             <label class="title" id="title_2">培训资料</label>
             <image class="sep_line"/>
             <image class="element_image" id="image_2"/>
+            <button class="mask" id="trainning_data"/>
         </col>
         <col class="element_container">
             <label class="title" id="title_3">陈列基础手册</label>
             <image class="sep_line"/>
             <image class="element_image" id="image_3"/>
+            <button class="mask" id="display_book"/>
         </col>
     </row>
     
@@ -29,6 +32,12 @@
             </row>
             <col class="message_container">
                 <image class="bg"/>
+                <list class="list" id="list"/>
+                <row class="more_container">
+                    <label class="more">更多</label>
+                    <image class="right_arrow"/>
+                    <button class="mask" id="more_btn"/>
+                </row>
             </col>
         </col>
         
@@ -39,6 +48,11 @@
             </row>
             <col class="diagnosis_container">
                 <image class="bg"/>
+                <row class="more_container_detail">
+                    <label class="more">更多详情</label>
+                    <image class="right_arrow"/>
+                    <button class="mask" id="more_detail_btn"/>
+                </row>
             </col>
         </col>
     </row>
@@ -138,6 +152,7 @@
     width: 100%;
     height: 100%;
     background-color:#191A1B;
+    position:absolute;
     }
     
     .message_icon{
@@ -152,6 +167,53 @@
     height: 20px;
     background-color:white;
     margin-left: 2px;
+    }
+    
+    .mask{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    }
+    
+    .list{
+    padding-top:5px;
+    padding-bottom:35px;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .more_container{
+    position:absolute;
+    width: 50px;
+    height: 30px;
+    right: 10px;
+    bottom: 10px;
+    }
+    
+    .more_container_detail{
+    position:absolute;
+    width: 70px;
+    height: 30px;
+    right: 10px;
+    bottom: 10px;
+    }
+    
+    .more{
+    width:auto;
+    height: auto;
+    font-size: 12px;
+    v-float:center;
+    left:10px;
+    color:#a4a4a4;
+    }
+    
+    .right_arrow{
+    width: 10px;
+    height: 10px;
+    background-color:white;
+    mode:fit;
+    margin-left:5px;
+    v-float:center;
     }
   </style>
 </ui>

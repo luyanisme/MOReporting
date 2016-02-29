@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="ShopInfoBoard_iPhone">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+    <!-- add your UI elements here -->
+    <row class="image_container">
+        <image class="bg" id="shop_bg"/>
+        <col class="label_container">
+            <label class="shop_title" id="shop_title">正佳广场店</label>
+            <image class="line"/>
+        </col>
+    </row>
+    
+    <row class="button_container">
+        <row class="sub_button_container">
+            <button class="mask" id="address"/>
+            <label class="title">地址信息</label>
+            <image class="h_line" id="address_line"/>
+        </row>
+        <image class="v_line"/>
+        <row class="sub_button_container">
+            <button class="mask" id="tools"/>
+            <label class="title">工程道具清单</label>
+            <image class="h_line" id="tools_line"/>
+        </row>
+        <image class="v_line"/>
+        <row class="sub_button_container">
+            <button class="mask" id="displays"/>
+            <label class="title">陈列道具清单</label>
+            <image class="h_line" id="displays_line"/>
+        </row>
+        <image class="v_line"/>
+        <row class="sub_button_container">
+            <button class="mask" id="other"/>
+            <label class="title">其他资料</label>
+            <image class="h_line" id="other_line"/>
+        </row>
+        <view class="algin_view" id="algin_view"/>
+    </row>
+
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        padding:100px;
+    }
+    
+    .image_container{
+    width: 100%;
+    height: 70%;
+    }
+    
+    .bg{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background-color:black;
+    mode:fill;
+    }
+    
+    .label_container{
+    position:absolute;
+    width: 200px;
+    height: 50px;
+    right: 30px;
+    bottom:30px;
+    }
+    
+    .shop_title{
+    width: auto;
+    height:auto;
+    v-float: top;
+    font-size:30px;
+    color:white;
+    float:center;
+    }
+    
+    .line{
+    width: 100%;
+    height: 1px;
+    position:absolute;
+    background-color:white;
+    v-float:bottom;
+    }
+    
+    .button_container{
+    margin-top: 10px;
+    width: 100%;
+    height:50px;
+    }
+    
+    .sub_button_container{
+    width: 25%;
+    height: 100%;
+    }
+    
+    .v_line{
+    width:1px;
+    height: 20px;
+    v-float:center;
+    background-color:black;
+    }
+    
+    .mask{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    }
+    
+    .title{
+    width:auto;
+    height:auto;
+    v-float:center;
+    float:center;
+    color:black;
+    font-size:20px;
+    }
+    
+    .h_line{
+    v-float:bottom;
+    float:center;
+    width: 60%;
+    height:1px;
+    background-color:black;
+    }
+    
+    .algin_view{
+    width:0px;
+    height:0px;
+    }
+  </style>
+</ui>

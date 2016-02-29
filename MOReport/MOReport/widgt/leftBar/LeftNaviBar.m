@@ -39,17 +39,15 @@ SUPPORT_RESOURCE_LOADING( YES )
     self.list.animationDuration = 0.25;
     self.list.bounces = NO;
     
-    NSArray *testArray = @[@"首页",@"陈列照片反馈",@"店铺物料反馈",@"巡店表格",@"即时陈列指引",@"本店资料",@"关键数据分析"];
-    
     self.list.whenReloading = ^{
     
         @normalize(self);
-        self.list.total = testArray.count;
+        self.list.total = self.titleLists.count;
         for (int i=0; i<self.list.total; i++) {
             BeeUIScrollItem *item = self.list.items[i];
             item.size = CGSizeAuto;
             item.clazz = [FounctionCell_iPhone class];
-            item.data = testArray[i];
+            item.data = self.titleLists[i];
         }
     };
 }
@@ -66,6 +64,10 @@ SUPPORT_RESOURCE_LOADING( YES )
 - (void)layoutDidFinish
 {
     // TODO: custom layout here
+}
+
+-(void)setTitleLists:(NSArray *)titleLists{
+    _titleLists = titleLists;
 }
 
 @end

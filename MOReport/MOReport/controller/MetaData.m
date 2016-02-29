@@ -27,3 +27,11 @@
 @synthesize date = _date;
 
 @end
+
+@implementation NOTICEITEM
+
+@synthesize noticeContent = _noticeContent;
+@synthesize noticeType = _noticeType;
+@synthesize isReaded = _isReaded;
+
+@end

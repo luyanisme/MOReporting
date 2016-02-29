@@ -22,6 +22,7 @@
 #import "DataGridBoard_iPhone.h"
 #import "DisplayPhotoBoard_iPhone.h"
 #import "DisplayFormBoard_iPhone.h"
+#import "ShopInfoBoard_iPhone.h"
 
 #pragma mark -
 
@@ -50,6 +51,8 @@ DEF_SINGLETON( AppBoard_iPad )
     _shadowView.hidden = YES;
     _shadowView.backgroundColor = [UIColor clearColor];
     [_shadowView addSignal:@"shadowView" forControlEvents:UIControlEventTouchUpInside];
+    
+    bee.ui.leftBar.titleLists = @[@"首页",@"陈列照片反馈",@"店铺物料反馈",@"巡店表格",@"即时陈列指引",@"本店资料",@"关键数据分析"];
 }
 
 - (void)unload
@@ -72,6 +75,7 @@ ON_CREATE_VIEWS( signal )
     [bee.ui.router map:@"DataGridBoard_iPhone" toBoard:[DataGridBoard_iPhone board]];
     [bee.ui.router map:@"DisplayPhotoBoard_iPhone" toBoard:[DisplayPhotoBoard_iPhone board]];
     [bee.ui.router map:@"DisplayFormBoard_iPhone" toBoard:[DisplayFormBoard_iPhone board]];
+    [bee.ui.router map:@"ShopInfoBoard_iPhone" toBoard:[ShopInfoBoard_iPhone board]];
     
     [bee.ui.router open:@"LoginBoard_iPhone"];
 }
@@ -163,6 +167,10 @@ ON_SIGNAL2(FounctionCell_iPhone, signal){
     
     if ([signal.sourceCell.data isEqualToString:@"巡店表格"]) {
         [bee.ui.router open:@"DisplayFormBoard_iPhone" animated:YES];
+    }
+    
+    if ([signal.sourceCell.data isEqualToString:@"本店资料"]) {
+        [bee.ui.router open:@"ShopInfoBoard_iPhone" animated:YES];
     }
     
     _shadowView.hidden = YES;

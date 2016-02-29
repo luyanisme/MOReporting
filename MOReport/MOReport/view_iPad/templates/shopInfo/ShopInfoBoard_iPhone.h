@@ -8,19 +8,18 @@
 //  Powered by BeeFramework
 //
 //
-//  MainBoard_iPhone.h
+//  ShopInfoBoard_iPhone.h
 //  MOReport
 //
-//  Created by 卢棪 on 2/27/16.
+//  Created by 卢棪 on 2/29/16.
 //  Copyright © 2016 sencloud. All rights reserved.
 //
 
 #import "Bee.h"
+#import "AddressCell_iPhone.h"
 
 #pragma mark -
 
-@interface MainBoard_iPhone : BeeUIBoard
-
-AS_OUTLET(BeeUIScrollView, list)
+@interface ShopInfoBoard_iPhone : BeeUIBoard
 
 @end
